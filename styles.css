@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.symbols {
+    border-style: solid;
+    border-width: 2px;
+    padding: 30px;
+}
+.numbers { 
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+}
+.numbers-container {
+    display: flex;
+    
+}
