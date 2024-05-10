@@ -1,8 +1,13 @@
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+}
+.calculator-body {
+    padding: 20px;
+    border: solid;
+    border-radius: 10px;
+    background-color: #D3C1D2;
 }
 .symbols {
     border-style: solid;
@@ -12,9 +17,51 @@ body {
 .numbers { 
     border-style: solid;
     border-width: 2px;
-    padding: 10px;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    
 }
 .numbers-container {
     display: flex;
-    
+    width: 250px;
+    padding:20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.symbols {
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+#symbols-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.display {
+    border: solid;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#displaySymbol {
+    padding: 10px;
+    font-size: 15px;
+}
+#displayNumber {
+    font-size: 20px;
+    padding: 10px;
+}
+.calculator-things {
+    display: flex;
 }

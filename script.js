@@ -50,10 +50,24 @@ subtract_button.addEventListener('click', ()=>  {
     
 })
 multiply_button.addEventListener('click', ()=>  {
-    currentSymbol = 'multipy';
+    if (currentSymbol !== '') {
+        console.log(currentSymbol);
+        equals(currentSymbol)
+    }
+    y = x;
+    x = '';
+    currentSymbol = 'multiply';
+    displaySymbol.innerHTML = "x";
 })
 divide_button.addEventListener('click', ()=>  {
+    if (currentSymbol !== '') {
+        console.log(currentSymbol);
+        equals(currentSymbol)
+    }
+    y = x;
+    x = '';
     currentSymbol = 'divide';
+    displaySymbol.innerHTML = "/";
 })
 equal_button.addEventListener('click', ()=> {
     equals(currentSymbol);
@@ -74,6 +88,17 @@ function equals(currentSymbol) {
             console.log(x);
             break;
         }
+        case 'multiply': {
+            x = multiply(+x,+y);
+            console.log(x);
+            break;
+        }
+        case 'divide': {
+            
+            x = divide(+y,+x);
+            console.log(x);
+            break;
+        }  
         case 'equals': {
             break;
         }
